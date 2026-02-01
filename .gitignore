@@ -148,6 +148,9 @@ tensorboard/
 .DS_Store
 Thumbs.db
 
+# Backup folder (local only)
+_backup/
+
 # BPE vocabulary files
 *.bpe
 *.vocab
