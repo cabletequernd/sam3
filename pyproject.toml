@@ -25,14 +25,15 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
 dependencies = [
-    "timm>=1.0.17",
-    "numpy>=1.26,<2",
-    "tqdm",
+    "einops",
     "ftfy==6.1.1",
-    "regex",
-    "iopath>=0.1.10",
-    "typing_extensions",
     "huggingface_hub",
+    "iopath>=0.1.10",
+    "numpy>=1.26",
+    "regex",
+    "timm>=1.0.17",
+    "tqdm",
+    "typing_extensions",
 ]
 
 [project.optional-dependencies]
