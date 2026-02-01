@@ -25,6 +25,7 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
 dependencies = [
+    # Core deps
     "einops",
     "ftfy==6.1.1",
     "huggingface_hub",
@@ -34,6 +35,11 @@ dependencies = [
     "timm>=1.0.17",
     "tqdm",
     "typing_extensions",
+    # Runtime deps (imported at module load, not declared by upstream)
+    "decord>=0.6.0",
+    "psutil",
+    "triton>=3.0.0; sys_platform == 'linux'",
+    "triton-windows>=3.5; sys_platform == 'win32'",
 ]
 
 [project.optional-dependencies]
